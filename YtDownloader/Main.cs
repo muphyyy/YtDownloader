@@ -1,6 +1,4 @@
-﻿using MediaToolkit;
-using MediaToolkit.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,26 +66,14 @@ namespace YtDownloader
                                 var source = client.path;
                                 var youtube = YouTube.Default;
                                 var vid = youtube.GetVideo(textBox1.Text);
-                                File.WriteAllBytes(source + vid.FullName, vid.GetBytes());
+                                File.WriteAllBytes(source + vid.FullName + ".mp3", vid.GetBytes());
 
-                                var inputFile = new MediaFile { Filename = source + vid.FullName };
-                                var outputFile = new MediaFile { Filename =  $"{source + vid.FullName}.mp3" };
-
-                                using (var engine = new Engine())
-                                {
-                                    engine.GetMetadata(inputFile);
-
-                                    engine.Convert(inputFile, outputFile);
-
-                                    File.Delete($"{source + vid.FullName}");
-
-                                    MessageBox.Show($"Video downloaded successfull\n{source + vid.FullName}.mp3", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    button2.Text = "Download";
-                                }
+                                MessageBox.Show($"Video downloaded successfull\n{source + vid.FullName}.mp3", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                button2.Text = "Download";
                             }
                             catch (Exception ex)
                             {
-                                MessageBox.Show("The link format was not correct or the video has comercial content\n" + client.path + "\n" + ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("The link format was not correct or the video has comercial content", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 button2.Text = "Download";
                             }
                         }
@@ -107,7 +93,7 @@ namespace YtDownloader
                             }
                             catch (Exception ex)
                             {
-                                MessageBox.Show("The link format was not correct or the video has comercial content\n" + ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("The link format was not correct or the video has comercial content", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 button2.Text = "Download";
                             }
                         }

@@ -72,11 +72,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(76, 87);
+            this.label3.Location = new System.Drawing.Point(138, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(375, 13);
+            this.label3.Size = new System.Drawing.Size(252, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Insert the url of the video that you want to download (by the moment just .mp3)";
+            this.label3.Text = "Insert the url of the video that you want to download";
             // 
             // button2
             // 

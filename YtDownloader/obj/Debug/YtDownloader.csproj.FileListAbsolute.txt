@@ -8,7 +8,6 @@ C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\bin\Debug\YtDownloader.pdb
 C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\obj\Debug\YtDownloader.exe
 C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\obj\Debug\YtDownloader.pdb
 C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\bin\Debug\libvideo.dll
-C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\bin\Debug\MediaToolkit.dll
 C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Muphy\source\repos\YtDownloader\YtDownloader\obj\Debug\YtDownloader.csproj.CopyComplete
